@@ -1,0 +1,12 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Preact Study Project",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+  "remoteUser": "node",
+"mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+]
+
+}
